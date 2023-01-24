@@ -1,0 +1,844 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AQ_CPQ_Catalog_Regresion_1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="788,6971.2" sap2010:WorkflowViewState.IdRef="AQ_CPQ_Catalog_Regresion_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AQ_CPQ_Catalog_Regresion_1" sap:VirtualizedContainerService.HintSize="535.2,6906.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Kill Process workflow" sap:VirtualizedContainerService.HintSize="493.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CommonActivities\Kill Process.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke OpenAQ workflow" sap:VirtualizedContainerService.HintSize="493.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CommonActivities\OpenAQ.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Go For Catalog workflow" sap:VirtualizedContainerService.HintSize="493.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="CommonActivities\Go For Catalog.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Sequence DisplayName="FIlters" sap:VirtualizedContainerService.HintSize="493.6,6352.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAeCAYAAACbr8ZMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGUSURBVFhH7Za/asJAHMdvyhNk7OrSF6hDR6c+QZc8gA/gkAdw6SYVuliH4uBSdMhQhYCQwcGA3Sp0EIROgro1QsK3d/5prf6gZ04Fe3fwgeR+3xs+v/wSwpIkga4YeV0x8rpi5HXFyOuKlHy73cZ8Pidr54yUfKlUQrVaPWkDXu8uwRjjXMANIjKjirS87/vwPA+z2YzMHJYArs3FbRs2b4CVbyEic2pIy/f7fYzH49M0IHAX0rlHD8UMb4LloDklcorsJS/W8RsQoVOw+bhnUR4kCFxxbcFpTomsGnvLiyUaUKvVEMcxmVci6qAgRj5bxkDcr6aA3T5jup1VJJV8GIbo9XpkVpWolYfFZTPFcLm3bga7wdPHbl4FJp7eX2zKr8WpnDoTNBxr9ZXfJVcZEmfSs5f8ccU5kwYcixZfkKtgSJ1LibR8vV4/rjhn0nAWI2+7we/ad1OucP+2sa+ItHy32yVrh+QlLwTFT83nVu3ndbh+eN+qpUdKfjQakfvnjpT8f8XI64qR1xUjrytGXk9ifAFhWpiiX9XGTAAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <Sequence DisplayName="scroll down" sap:VirtualizedContainerService.HintSize="452,660" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Int32" Name="i" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="410.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">1</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="410.4,467.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+          <ui:InterruptibleWhile.Body>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,300" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="200" DisplayName="Click 'client'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target Element="{x:Null}" Id="e322bcdc-c446-4e4a-a5ea-01c5a09bfcee" InformativeScreenshot="83c5925ab961df2f41c2853500795390" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+                    <ui:Target.ClippingRegion>
+                      <ui:Region Rectangle="266, 739, 16, 16" />
+                    </ui:Target.ClippingRegion>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ui:InterruptibleWhile.Body>
+          <ui:InterruptibleWhile.Condition>
+            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;=5" />
+          </ui:InterruptibleWhile.Condition>
+        </ui:InterruptibleWhile>
+      </Sequence>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGMAAAAdCAYAAAC+E9IkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGdSURBVGhD7ZVRtsQQDECtyo6sx17sxF78eyMUUZ2+6Js2804+7jktGuSKqhBCFHggMhghMhghMhghMhghMhghMhghMhghMhghMhjxERne6qi0jb68O6OiMm43TsCsy3AmKjVP8nsZPlr9ek/fVnS0Hsd4B8RXJrpJ3zezLCMl2JgkZJ+U38jQ1uPxBCF0Gfs5ObImw9uoIRl5k8bhfqqMEFw0rwr5XLL+sQxIdklu/4z6F2Q0qXlMf5Uh4XBFtspI8VM8mKeMr/Hh4OBYW1+usNY+Hqq7WZAxVANsFl8xVBk5KVtyi4hecPk/1TknMlD/bk2TAzBZ99PQZdQrams7SC7pB97FO0gSijGT0csrc7STfiRjaHsYsoyxtCtd8qmVgRgSvQExiTLaHAdzFiGwfvT9MxBljHd7YTjNl2T8YWWcyqic9d8DTcbBqR03c0lG6UfJhXk7QYsy8JieszXdA0nGftONfH3lBF2TkcgV2K7BoVLIMrZvcjxo796Bbr1PQf+BCx9DZDBCZDBCZDBCZDBCZDBCZDBCZLAhxB+8b266RwYzMgAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto* ' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAiCAYAAAAZHFoXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADqSURBVFhH7ZXBDcMgDEU7mDeIxAK5sEnEIQtkAbbIhUXY5rcQSCqaXiqoQfKTfIDTf8F2HhgcEeBGBLgRAW5EgJv/CXgLTQYuHZ0haOvT6XeqC4RgRASTk2bGEHAwpGGMBpUGQwg4A9IWvggbGUHgCuVhdRGwe4EYUCNn8vbVRuE1jmP/AveBL6HOBY6WCdunrDNk1wJheN+/diK+Sg7ds0AI87E2I2Gtpn9C7zPAhQhwIwLfuFupoWrTTGDfd8zzfAafpine1aZpC23bBqVUrGVZ0m1dms/Auq6xWiFDzI0IcCMC3AwuADwBHrnUMvsxzx8AAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAvCAYAAABHXlKwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJaSURBVGhD7ZfRjcMgDIZvsGxQqQv0JZtUPHSBLpAt+pJFuo0vYEOMMUm4Jtdyxy8hNdgBfzY08AV/WA2uVjW4WtXgalWDq1X/D240HXRdB2akDiFvD60f4Em2VE8YeuE/tX7Iv5HoOUDfGciEk5UCN4LpejCmhy6ho0AFDMLmJsd3IhgX7PROLntSu8GNBoNXBnwOE7A6iQIQlLG58XuYu21S08rinHP/nFjdnyuBs1VAxzQoV6FMtvO2HDjvt78ZqARPEr3iT4rhhJPLGluCM3gq51sEtzQeViUMl8BJCX9SBCdhJOxxlbOPdi5cYr4twi35kxgcTsadffMBJPBBmDm9Chm4KHEy82uVW/EnzXD2j0RZt7ih/cA4iKyQq5oKbaXBiXEi0EkuFgnH7Gv+pACXX1YyK+sVjqX7y6kwiWTvDZjpHe7j4nM2TOKav1X8h/KSPMTSxv9d7Qj3eWpwtarB1aoGV6saXK36ZTh7lEvPr0epDM4dWOk8R009jmb1qXDayZtg9QOzpo+Ew5uBCuGg/WHZHp5t8OiP1ZX3MITT7oZLl+GfaBucvD9xRTZ5M6DnEDCrXDImJkSy8S3A2xYVwOWuMixgguEBxhVKfcNqsCtAufA+Hg+4XC4B6nQ6ub4tOqRyUfajoDmcfZxtdknm9u79fofz+eza9Xql3nUV7TltO8SVKYQLz7I/1e12c61EG+EIQgbgqsZhSuGsmfZR8NlPm+GcbKC09rHJbJfD+TG3f062qwzuCC3t5xf1djjte7eX3gwnPgc76/3L8kA1uFrV4OoUwDcQDhK9Iu8+cgAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAeCAYAAACv1gdQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEBSURBVFhH7ZPdDYQgDIBvMDYwcQFf2MTw4AIuwBa+sIjb9KT8I5dcas1dIl/SB0Dgo60v+GO6HJUuR+ULuR20FCD17scBN6+MH97AU+TcWAgfmfWuZZoXEtJRds8xNhokrinI38omhwKtNBpVXIrfSX3sxpF/UCkV4JVrXGJUvdeAitkrz6hh7blUvvLyVNIQbHLu9eeS2Qy0D86zeM5cDoOc65tGlmLvVNjv/dqncjs45CxeMEYlhtmN6/kfGQTz9SDLJfcDuhyV58iVTZ+CCqvctm0wTVOUGoYB56iwl3VdVxjHEWOeZz9L45aeW5YF4yrP+SG46XJUuhyVLkcD4A3L7m5bdQKlcwAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <Sequence DisplayName="scroll up" sap:VirtualizedContainerService.HintSize="452,660" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Int32" Name="i" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="410.4,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">1</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="410.4,467.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+          <ui:InterruptibleWhile.Body>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,300" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="200" DisplayName="Click 'client'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target Element="{x:Null}" Id="e322bcdc-c446-4e4a-a5ea-01c5a09bfcee" InformativeScreenshot="0e0a089985ad655909d91f124eb40ebb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='AutoQuotes 1.22.12120.1734 (Test Server - furl01.aq360.com/AQ8) ' /&gt;&lt;ctrl automationid='catTree1' /&gt;">
+                    <ui:Target.ClippingRegion>
+                      <ui:Region Rectangle="255, 1, 17, 14" />
+                    </ui:Target.ClippingRegion>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ui:InterruptibleWhile.Body>
+          <ui:InterruptibleWhile.Condition>
+            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;=10" />
+          </ui:InterruptibleWhile.Condition>
+        </ui:InterruptibleWhile>
+      </Sequence>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAeCAYAAADNeSs6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARUSURBVGhD7ZdPSCNXHMfnNKcc5xRyERRkRQ9KIVCCLOSkqRSKsAZCDwo2IsEs7CEgoReFbj14yCG45JLKUgqyWeslxVJLLCJ2pStriRKCrGwPuYxihDkYvp33Zl4yiTNxNhNdhn0PPpD3Z97MvE9+v/dGqNVq4LgPLs6lcHEuhYtzKVycS+HiXAoX51K4OJfSsbiFhQVHmM3JsY8jcZ0Wx+JKaQQEAUIgjZJZ/TPgQcTd3NwgFovh6OiI1u2I++f5IwhEhuBDoqA09xdT8JM+fwpFs3rtDzz1kGsbeLwjCKf+wn+KYZ52yL9imszhS2LPrP8T8yDi1tbW0NPTg97eXuzt7dkQV0BCUhdNkiCpiy5G81CM/XeKyyOqC2vFlyg0z2VFJ+IeMPLvXdzm5iYGBwepuPn5eVxeXt4trpCgwoKZLSz1qQshRpCTDf22xUWRp/Uq3v7o1+TVx9wDt57j/rhXceVyGVNTU1Ta6Ogodnd3aXt7cQp2nknqIvuRKtZQSJDfIiI5uTHmY8UpF3jDxLFoUMrYSoYwJIlau8eLx7MZ7FfI9YRtxES1XYxh21if+Qm//xBCP03FHvSHs3hH0u92DCK9ZwNJjW7yPuWtp3js9dA2URpC+GVRv0fndEUcEXJ9fa3XGmV1dZVKIywvL+utd4hTdvCMpEkmQY8+4ckGZDbGtrhWRIxlz9T+Cjae6MJaEMeyOGuag0Wtdfr1p1QRVuI+ZDFG6o++QjweR3zqS0ixvPYeDnAs7uTkBAMDA5iYmEClUqFtpBwfH9M9jUgLBoNQFEXvaS9OyUfpAvQt/a21MZHCGLIf9HEfLU6ENBRC8vUpqqSf7UViCC9Oq3TO6ukLhEhECQGkS8Y5WsX5EPmZzGNIv+oebPpcxnv5vsbz3/7Fhd3D0R04Fjc9PV2PqkAggFKpRE+R4+PjtI3IOzw8pGNZsRYnIxcxjwRCMEOiRR1nWxxb9BZYdHz7WhNJKSLlJ9doKdpanGFO9U9Gn62dODVVvvtlFl+wU66nH99tlO0dkNrgWByJssnJybq84eFhevRndWOKZMVSnJxDhP7rLQhmtDTmVBwbL81g4z2JOAUXb1YRoPdmke1AXN/32FczTLVq/Iyp4v2fS9o96vtm53Rljzs/P8fi4mJdFmNubg6yLOujGsVKnJyL0EjQNnVDX12oHg1OxanRlQ6YR7Yvtq3vpR2IY2mRQdrVPbqnP4QZsr/Fv8EQeQ8pgQKbo0O6Io6Uq6srrKys1Pc1kjYLhYLe21ysxOWj5IVNPrgNKTSQLt3+Xrr1/dR6IjShso9UeARePYWR014ouYVyfQ+yOFUa59RTrqjK1q6pYCepHj7oOAmTL9XUfvYKsyNeeMjzqadQ70gYmbfavuqEroljZX19ncozS5GsWInj2Kfr4kg5ODhoOkW2Fi7OOY7EOcFsTo59OhbH+bRwcS6Fi3MpXJxL4eJcChfnUrg4V1LD/9v/Vpy3btyCAAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAAlCAYAAAAgAOVvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANaSURBVGhD7ZrJjcMwDEWnsHQQIA3k4k4CHdJAGlAXubiRdOMRSS0kTXnsbEoG+oCAWAuXR2oOwvxMb9Vt8sNu2u3CGHz4aqFxcsG/G+PnCzW6kKfhaBE6HgJAaTwKanTBjgtpt9RHQ6euHHzCHLv0EfAAvVmHJ30V9CDRqRB8+I1zrBg3Pw3pZoSRzutbY8/zW2DZh5iGyY/JB4+F2VGJch+D98vQkz8cwVdOP/q+cV883iB+NsTrXwOdjJcdNJf9YAFY4HCe7b/5QXzLzrDsx9smktVxqhhEzNEHX+eCeKvxad/xW8Ur/fL1ou1/XoQT3glBCioIksw2xDrZEzFhkXhRlf0/z5AQVtwk/KMUnCWJgs19i6JUcr8Ler4us6rNoWAQfH8cNnRKfr5/I3QEY9jBTbR/C/R5DnXoPB95K0h3Q5cBcxlQjGoLiXUjCaGV0I1O59rU6VhAZkt8L0OXuZHeAx0BLIBUgWFQ1SKthB4h1uKkzi0g0WclRt2ttHcldJ07Fuwd0EHROb+iIhCrG/j+vL4WOojAczs8bu7DjTUbIFrLNpxjt+gP6KAEGkbYiEU0HC1A73qVOvQG6tAbqENvoA69gTr0BurQG6hDb6AOvYE69Abq0GvC5wzjmeMJegr0pUekr9VnQ6eHKefsx52v1UdDTy9tGCR7iwbBHKzx1zf9Kpde49jrXFZcTzcpvRyK/WHkI+hHxiCeazHGck6+oMoXRuc/GDoAoeApaJFISjJTUXtiMcoZeqKVEKVNAs7A4p4ER50X/tSa6mRRnFyAOfRUFD226DHoi4EH4fpC5wEwvj8IuzqRma0TjAIVJAspzvP4Kr7onGFX5ZZ0vV6n4/GYYe/3e5zbooeg25BZoAZ0kbwBAm1WoetOJhV4+BFgkE9uC39HUHyYtwBUgQ66XC7T4XDAcTqd4ux6PQA9XcFaIrBlDv3VnV72qL2GryLD7gJ00Pl8xnGP7oeOHTUPijoqgsbAGcTYUbIrdZGWQWFR+JwRBxV2kAXXtpWkXSqCld8zdDd00ZFC7KrGTvf8avMzESr+J1RcLx0bZEAHoe9kzwIzK3ZUmmejbEmgYYBNyOPDoK9ShG6VBlWB+t/VoTdQh95Ar4XeZapDb6AOvYE69Ldrmn4BiNHGX98BR3cAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAAiCAYAAAD/NZFTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE6SURBVFhH7ZXLDYMwDEA7GBsgsQCXbIJyYAEWyBZcWIRtXGInlE8CaVM+QX6SpSo0rV/smBc8EJZKBZZKBZby0isQWQaZDaGgN48snaRnsjMLluVeDAFq+QNfEC/VyVUSvRIgZll1IIfvSCkgW1qh1Hq/8wACiZTSyQb8uRbX1UMBOeya4JDSoJij4iHESbmSdKBbjyrXgxL2s8Ej5V0PIE4KW29HapHcqgLe5Kllbym1K3G7SuFpbt0parf5ZKMYW9CT/HV3aoAm1TwpvYZJOyajhvaYCrukcN9l04+gJCeVMCeM7yZnZpMKo9RkL8b+8NniL1J3g6VSgaV+ZT4EPnEUp0i1bQtlWY4yeZ7j2lGc1n5N00BRFBhVVZnVYzj1TtV1jXE0PChSgaVSgaVSgaVSgaVS4YFSAG9qGj0HisbyLwAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAApCAYAAACV8mGQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGmSURBVGhD7ZTLSsUwEED9sIIg4qZYdWsRshRciutaoT/QpQjdiJ/Qzf2Cu9VNf+JifYByfYyZ9DVJy0X7juTALJJM0pxkmi3oie/1Gj7vH+D99g5eL6/g+fQMno5PID04gnR3Dx63dxoDxzAHc3EOzsU1cC1csw29SVG+Viv4WC7h7foGXs4vIN0/bBTCwDHMwVycg3O7MojU1BgpXTBSumCkdKGlVAIRs8CyaPiwyEfbswCfr8WihLQZlM1f0kmq+jj/vM/FWMRH+mRiKW4l31YSASM3WeaqeZwkYvmBZOv6OCjyqvl/qYR+b0rsRrREGZVNIVicuDImrUWkBBPcFD3J2q0ppYjSRY50AJLwDKTkkqo+LsqJCNfESQmK3OpKZyTFkU6/4aZkis2rEjOToqeflRTdXJ3scWA8jz4ATVKb12miPym1T3n9MKTNFeNypyKFaUUpD/76zRsjpQtGqgv0waAxBKNJxXEMruuWMrZti74hGLX8wjAEx3FEeJ6X9/bP6P9UEAQihsQ8FLpgpHTBSOmCkdIFI6ULRkoXjJQu/EMpgB+uCLZRsxft1wAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_15" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_16" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE4AAAArCAYAAADWk770AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJPSURBVGhD7ZnRkYMgEECvMDvIjA3kh04yfqSBNGAX+bERu+FgF3AXUOPGid5l3wwzAUGXB5Lc3o9VRKg4ISpOiIoTcri4oWts0zS2G0IDMNreNNb0Y6ifj4PFBUHGOHmdndypuBWioCETVRE39ta4nel3JxS+RT/OScQ5QUPnhBiLrjJxQdrkarCdqx+5I88jzgHnHdjh7WPvXuVsh0Gb6V3PYziVONxZftfNCSX4HaripumDJNPZTnfcEqW4eH75L4DUzs4/j55xFXFhN+ViQB4KLa4dwMHi/i4qToiKE6LihKg4ISpOiIoTouKEqDghKk6IihOyIq7+t+THgXQTTa0fj4oTslGcT+e4CdD8f8yJQfaCT47nzKZ0ERSaX/NjXT1mRWj2g7ZBITm4+B8yLDTt5ON29SHG6eJajW8bAnE0eJoXw8+TDzq2fp/UN6SM0nWoExGVHYcJz2nSKDj2wedxUUvxIdMi8FJDII6ubJhAiIaluFMaPH6urHbs60Wxlc8mWYwv4+BjMO40PlDGx2N6Pp/2er0mYZfLBdpqvC2uEBCCKdsxGFbodSYum3g+SbooCTqmLo7eh8VHeDwetm1bKLfbLbSW7CsuBbwy8Zyt4ipxYNuKuLn4Mu73O5QldhYX6u5gLifKzxPGS+Loc/F68dz0zHkx2M/v+IWFfIHdxeEk+aQQlEdf1XTfNXGO9A2a+gV56X5UxLy4+fi2sSLuP0JfaTnfJw6+qN57TT1fJ479JHmDL3xV90HFCVFxQlScEBUnRMUJUXEirP0F4bItY5OVQPsAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_17" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_18" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAeCAYAAAB9qs9NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVeSURBVHhe7ZlPSGNHHMff6Z1yfCfZi4dACMXLXgKSS5bSspKDdFmwQqAFwXoJG8FDoCiIByOFCqEEtushu9p0QXAhsCgJ25SwiMSKCyJBgisBXcglOeTwBPPt/HmTvDyfmqhpMW+Ez+HNzJuZmM/85jcTpdFoQCJxIlJ+iWOR8ksci5Rf4lik/BLHIuWXOBYpv8SxdCT/1tYWzs/Pbeuchn68jp88LiiKAtfzP3Fq00byMOhI/uXlZaysrPwHC+AUa6MqE0tRXPDM56Fb2lQ2p/CI1RO8Mexb6ntLFRshMT+CL46ibTvJQ6Bj+bPZLNLpNGq1mm2b+6GIuM8Qi6KGsFG9pl6Zwmbb+70mj6hGx/Xh1wMder1+aXF2RSYMlXwONZyxr5f0lI7l39vbQ6VS6fECEHK74fXSCKsitFFt1e/H4KWyhEIY+1/k38TUfY5LdjG2iKc27eslPaUr+elfbxeAkJ9E1lcz0KgYY+uoGvX5qGYsiHWLhDoO3k4iMKixSErbaENBLOYqRr8lJPyk3LeEd39MYljjC0sbnkWuIsY2xFbDyBjjtUXmUgJ+1ncLLUrSsoO3mAwMQlN5maoNIbiYQ0X0QeZ2ll1EcIjPTdWGMUvmVUr42/qijCRPb56H6XnipXH+UJ/g9xIp18+QXQxiiH0+Ppfx+E5zLnxMH+ZSMTylbVzT+KtRwU58vPmOayCA+bwp4PQxXctP/+gCWF1dxcXFhW3729OSP36QwwxLMUaQPCV1uvGszSCnWyOwNR0y0KLIX1dPUEnU5amLTVQ3R2Yb+d0LuyjGfW1lHA3RPO9Dz0dbZxQBOStkbpL/qnmYn5uQ/1dRJ8HhkaWcopJ+T9h7l+dKxiDzo0FG8/+ASCSCiaAHT+JFPk6fcyv5C4UCw67t3TDJXxSRXsHXr05Q3QixaKfN5IisVkGqOPyQQeFzjYtcz+KFkZvTflr9qvAvfMSZTqLxuwm+szQPrR1IZ9OmevgBmcJn1HT6XEf2BZ+zzxAoE+YR1bf0D2tTP0oh9DyBkm3/9mNcKb9vDh/PdPJ566g3MgjT3UcN4uVRnbTTUfv7Z7hpO2P3FPJrY69xVCcLk55ZxK4yFEaqUCb9iHn0P13L3zvxKe3yixxf8S0gxm5ZvIjt03ZWQXQcp2cRfDwAFysXWOUXz4RiHD7W993k14/TmA0+xoCLlrfg8hvplvIVlj4ZfZq5q/zm98TnsUEdXWNXskJ+sTA5FeQWv8VgM217itiOSBf7m67k7634FKuk+4h5TV9k82rTIoj44p+9wRcaXcvvEXHT+tvIz29yGnoNh799w8e9Un7R7zO8+UIjcBnvI272DhdMR3qC1psif3kT0R8TfEwh8XcpkpeT6E2icUfzuG7R0Mh/aOyAFuzlN6DjpEI8RfMbO1Of07H8qVSqx+JTLktqzlNp+sPbWSQUO8QlupHfstDMXCn/1e8IwUS61lYvxjRSjvZ3OpiHrfxVkmLZ5fwK/IkSa2Mn/2lylBz8v2f5fmQiwOUfSTrix7uO5d/e3ratu19EmuBHgt5e0LKTJEZYLjuKNXrwZe1EfituRPiNhYelHvQWZxrhIE2TRD82/YoDrCnKVXcTGBe/3nrGEU/NsQXSuoc3xjWlJJWdePMdepMzHQ4yoYVw9BzwqXnDRPs13ULpB0iOe3iq5vJgPk8iPSm/cR7W2x+Bfoz0dACDxlgCfpAWtz3muZG0bfeX1i2ZqmEwMIssPUeIPvuYjuQvl8u25RLJQ6Yj+SWSfkTKL3EsUn6JY1Hor7QSiROR8ksci5Rf4lik/BLHIuWXOBYpv8SxSPkljkXKL3EoF/gX6AccBVpAkWoAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_19" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAZCAYAAABw43NsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGMSURBVFhH7dahbsJQFMbxqj5B5SxmT4CZQ+0JZvoAPACiD4CZI0HMULEgMEsqaiAhIalA0IRJxAQhmaoosiTcfLsX2BbgiFsu5QpOk38CPafmF26KI4QAd1mMZxDjGcR4BjGeQYxnkBbeaDTCZrMhZ/ecFl6n00EYhjcF/Hx9hOM4sgcESUHu2E4bbzweI45jrNdrcue6JQg8Ced58CSg2xyiIPfspo03n8+RZdltAJNgh9boxWjXJKLrI8qJPcuVwlNX9YAFJi1PHtc6uguBJFCfXfhRTuzarTSeuhRgv9/Hdrsl940qJmipI1vvYqG+H36FzssH8tNdy12El6YpZrMZuWtaMWzClVi1drq/94vpPOP9+3zfZqXxqoQTIkfku4e37HmN3pJ4xl6l8KqFk+URfJeG29XoYUk9ZyltvMFgUC2cLI/83ZH1guR49oe6f4kczSymjTedTsnZNRs2FRD1p/j/OD+9fZ3M7KWFt1qtyPv3nhYeR8d4BjGeQYxnEOMZxHgGMd7FCfwAL13zRBnxRugAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_20" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAkCAYAAABc4c7tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAG0SURBVHhe7ZZLsoMgEEVZFVtiPS7GnbAYZ7zwEWjUaJtk4H13cKoiYDfVh8aYZVkCwYNiQaFYUCgWFIoFhWJBoVhQKBYUigWFYkGhWFAoFhSKBeXrYv1kg7FT8OV5diYYN2/Wkd9yT+zsgjH7wt6L9WGyr+f4bsWGycsY70jxjQvzzhxp3BIbZTkX5W4LfEWsnbxcr5CrF7vN+R/Qi/VTsKmwuWBulvNascsyB/fq3N8VnmIvkcQVUf1vMX9DbDsgeU1/XYvDkz4DrWNj/Bgv5Snra/x0CGWsdS53fhsfD+jTUYodujQVTl6jWrG5wKuoIrU/LOV7XnPuiBXzmz3tHKadfaOhE1uv4XXsQJTqz1MX76DgIsae2P4glBytA4/EDmNgqMSO11elE6ntWMEgbSXFVIptOQ5yFrlp/+J9DBRix29hYeiyj8R+sWNPxVbO5p/JdbEH3TQW5iOxZV6ISnk72TfFyjU9Z3t6JpfFbgvYyFd0LvZnYiP5ZmhX/dDBarHrOzleGu+eE91+UdD9eSKPgWJBoVhQKBYUigWFYkGhWFAoFhSKBYViQaFYUCgWkiX8ARY9695qDOmKAAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_21" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAjCAYAAACXQSQwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARoSURBVGhD7ZdPSGNHHMdzeqcc3ynkIijIih6UQqAEWchJUykUYQ2EHhRsRIJZ2ENAQi8K3XrwkENwySUrSylIs9ZLiqWWWETsSlfWEiUEWdkecnmKEd7B8O3MvDfJS3zPJC/a3Vdm4AOZP29eZj4zv5nnqlarEHzaCEkOQEhyAEKSAxCSHICQ5ACEJAcgJDkAIckBCEkOQEhyAEKSAxCSHICQ5AA6krSwsNAVZn0KWtOxJLupa0nFFPwuF1z+FIpm+f8xDybp5uYG0WgUR0dHLN+OpL+eP4KLTrzLi3hebawvJOGjdb4kCmb56m946qbP1nF7RhBK/oF/VEM/d6H8jGnahzeBPbP6j8SDSVpbW0NPTw96e3uxt7fXhqQ84jKZIFmGTCZYiuSgGutbSsohostpxhvPN/ZlhR1J/8GOfhBJm5ubGBwcZJLm5+dxeXnZWlI+zuQE0ltY6iODlsLIKob6tiVFkGP5Ct5+79NE1do8ALf+x/1z75JKpRKmpqaYoNHRUezu7rLyuyWp2Hkmkwn1IVmoIh+nvyWEs0q9TaeS1Au84ZL4KldL2EoEMSRLWrnbg8ezaeyX6fOUbUQlUi5FsW3Mz7zEr98F0c/CqRv9oQze0RC6HYXE3llHJruWjqe09RSPPW5WJslDCL0q6O/oHNuS6ORfX1/ruXpaXV1lgijLy8t6aQtJ6g6e0VDHJ1zfVa4nG1B4m7YlNSNhLHNG6svYeKLLaUIay+CsoQ++G61DqC9JJt1K0ocMxmj+0ReIxWKITX0OOZrTxmEDW5JOTk4wMDCAiYkJlMtlVkbT8fExO4OooEAgAFVV9Zq7Jam5CBts39KfWhmX5hpD5oPermNJEuShIBKvT1Gh9fzskIJ4cVphfVZOXyBId4rLj1TR2EezJC/CP9B+DCGUnJmm/8v4Lu+XeP7L37ho9+JigS1J09PTtd3i9/tRLBbZbW58fJyVUVGHh4esLU/WkhRkw+YrnBJI011A2rUtiU9wE3zVf/1ak8YoIOmjz2hh1lqSoU+yoNh/u0sSCXfvfpzFZ/y26e7HNxul9i4vJtiSRHfP5ORkTdTw8DC7bvO8MczxZClJySLMVrMFgbQWirqVxNvLM9h4T3eSios3q/Czd/Md24Wkvm+xTyJHpWL8dKjg/e9L2jtq51zn2D6Tzs/Psbi4WBPDmZubg6Ioeqt6spKkZMNshWsHrqGuJk9f5d1KIrsm5Tffsd7otn722ZDEQxuHlpMztac/iBl6HsW+whAdhxxHnvfRIbYl0XR1dYWVlZXaOURDXz6f12sbk5WkXIQOzuTj1RAG/ani7e+RW98nzTczE8r7SIZG4NHDEL11BRNbKNXODIvbnbFPPWxKRKz2TBk7CXIxYO1kTL4i4fnsJ8yOeOCm/4/cBj0jIaTfauegHbqSxNP6+joTZRbmeLKSJGjNvUii6eDgoOE215yEJPt0LKkbzPoUtKYjSYKPg5DkAIQkByAkOQAhyQEISZ88VfwLFkIkUBEvr+IAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAA1CAYAAAD4bU3WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH2SURBVGhD7ZjbscIgEIZPYenAGRvwhU6cPNiADdCFL2nEbvawXCL8YEK8nTPj/83wQEAWPjfRzY+QAgoBKASgEIBCAAoBKASgEIBCAAoBKAT4sJCrWDOIsdfYT4Tr45S6VsxgpJr2ASgEoBCAQgAKASgE+LAQkWkcZJhPnphkHL5UiDMiQ354x9UaGYx1eRL5KiFKlDK3XIbihWTjrTlv4m+E/GMoBKAQgEIACgEoBKAQgEIACgEoBPhnQkKR5/+qVwXgVqBg7GRZCNYUT9UTUOIrvqYZ3dYDWOT5fja+jVcL8ZstK07dYP0uo5eGEMALeDozEi8V0rNYlt7a8skq0/X9uw83Zsaxrl7nphkQZDXHi6xciOlI8bQZa18oxN8qS6mKb75AYCzvy2zqvGXyCTo+C+mJeVsrycmXS7Kw5bSFwOIVDWHFYYqDJJ4UshJTBZRfQJ3ll8tFDofDLGK32/lrOY8J8eO16bcKWYyJ2aPUQpTz+Sz7/d634/EYr9547Bmydku9Q8hKzJ4MSZxOJ99a3BESN3f3VyYEKzeQsSCk+MwWISsxw35va7WeIT3cFaKEIFl6FocMG8zH5802hTi8AJ0bRW8SoizEdOS/MuPUyMgOFoV8IxQCUAhAIQCFABQCUAhAIQCFABQCUAhAIQCFFIj8AnwRNzQP3ROIAAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMAAAAAuCAYAAAB+khb1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATxSURBVHhe7Zjrax1VFMX9w/JnVCHVtInGarWiYtEPohgppdhaBEGlGFNFahuKVGNFmpL4oDaJ9QU+bioYX42mmDQ1DfkQkvGuTdaw72bmZmLmYuhZPzicsx/nzJm79+q96R2ZEAkjAYikkQBE0kgAImkkAJE0EoBIGglAJI0EIJJGAhBJIwGIpJEARNJIACJpJACRNBLANhkaGsoGBgY2rHQYHR3Nent7N6z2IA/5ZWwW7yQSQBMUoKurq2VUZTsCaDQaW3rWVuF74Tl1gLPwvkACuI1AAVhYgIauWtydKgCejbv5d6sLCeA2IgoAxfCNyWbi8LkUAEZRHBTtxez9vpmwLvIDH2snPN4rNmp8N4Bc5jDO4b89kMNGLTu33b7N4sR/lhidRAJoggL4pmVDExSBBaIYWEA2MuMsNOM4m+u4l7YnPtvfjU1dBd9U/n4g2nwG7oM1gc/b/kzMjFXZ598T7xDjPDfujZ9H3UgATVggDhSB+EITFIQ5mGOBkO/P8PjmKxIAbAoE+OfjzJhfBPb4vNhE3uYd/DNJPAf34N39vSLt9oH4TB8vy+0UEkATfOhsWBaPxWHTxcF8zFEAsBlnAf1ggWNxi3IxfKP5+/COEd/ggO9EvB3v78/nIL45MZfdq90+gjjv7+PxDI5OIQE0QQHYsMA3UCx0JDYQ8OeheL743o4CALDLGtvDhisC/qLh78Gm882HGXkk2jGXn8tW9gG+d5EAYm6nkQCa4EP3AvAFZLHKisJGZJx7sS8WmjHmxjjAXaKgisAZyI2UCQNn+nzkwfa59BHs8XHE/Hsyt8o+b8e7+HNjrNNIAE3wgaOIHu9jo/rBgiGHDRBjADH6kYPh42wW+Ik/CwM5gLkcXjgEe+O7gCg22jyb+GfzecTfHXPZncv2Me5jwJ8L4nv659RNqQC6d92zI4cQdVIogKLGqzKmG9PZ0SMvFsbqGrvv7Nm4pRDbp60AIvv69rc0YxzgxKuvF8bqHELUxaYCuD533dbLy8tmM1Y0wFYEAIr8mw0h6qKyAB478ITZjDV+nDZ7YeFGS/7giTdsBvS/cPjYhifL7r5rT55LYPufNs8/eyjfO3vtT/MtzC/kPiHqorIAlv5ZMhvrk4Nv2ppNO3z6bEtj0n/50oT55/+ezx66/0C2eGPR/PDNXpu1NWbuXVq6lR07ctzW8B0/+lK+Xl1dtZm5QtTBlv4G8P6pyS9s/eWVr7Jbzcal/8ypYVv//tsfZnMPRn/vAy2+duu9u++1P6gB/T4uRB1U+gZ4+qlnbN2uAek/9NxhW3//3Q9mY722tmZr4s/xa09fT7/5pyavmH1z8WZprhD/lco/gcDFC2P5eubnmTyPA1z4aNTWc3/Nmc2fQ/Bt9g2AXNpxAL8Wog4qC2C6cdVsrF95+TVbnx/50OZz776f56+srGQj75239cnBt3L/448ctBiAj/6Jy5P5Gnw8/qnN3bt6svGxT+xf/smJqQ2fBCDqpa0A0IAj5z6wNf73BvZ9e/eZPfzOWcsduzjekn/w0SfN/83X3+b+U2+fNt+e7j7Lof/SZ5+bn/bV6Z/MfrD/4dz3y8yv2fr6erbf+YSoi0IBtPsp8n8P/qQSog4KBQB2ogjwLSREnZQKQIgUkABE0kgAImkkAJE0EoBIGglAJI0EIJJGAhBJIwGIpJEARMJk2b8MHM5qC8LhZgAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_24" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAuCAYAAAB+vtSwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKlSURBVGhD7ZjNkcMgDIW3MNeQBnKhFQ5pIA24i1zSSLphjTDmSQgHO96f7OrNMLNYCKRPcmbxRzBVMiiKDIoig6LIoCgyKIq+HcpjdGHw93n2O7UDyiOMbgjDgMOH3jRfgvIYg9tw1l7thuLGxzwP4e4nMG6cLM/1b6BMVHi3UPClk3BthkIgFfu0WfCKL/nB81IE0bmsOMLWWYzjOmU5MCW1TAmQC3l5Tq4sj0CzPe5d1krfNOedws/mse3tykN+U1ilY5LiVYqBtwOtIRdpgBFKtAO0KDg/FWD76/Z6p7BK50A4NASnVQ+hpcS5bxOKspYGFKXEI+Ct6PjXR+kU1HqniM6Q855OaWhL1xz/QztXj+UNypVb7Nhp5AtJkk1CQQgplq7fjSfFQh0DRT5T2jrHHaG48Z6SEbao0u7TcD74aR3aqSvJlhOcwWSfOGaHZS2NL319/r4MiiKDosigKDIoigyKIoOiyKAoMiiKDIqin4Oy4S7CbtGV0r/5PdefXq1CyXeHYw4Ul7f3hJKu5d7Lq/5BeksoOWj5DSM+F98l6GabExQ3ZAyWJSehPPVr3axrKOymveF2nNWEUhJIh5ZKyQ9BaI+2NsA2lOd+9de9bBdQhC8rGKhASwOlQxEfc+TGFGSOQqxlErY2FKE1PxIWhkPR19bx3W63cD6f+6FUdGXiUA1aW9pmtmEVOqH0+pEQRP0334fvhbper+F0OtFAKVBaG2NgORAMKD4W8Ho7ZYsfaUunrOtyudBA1VCoYjVZ/h7Pc+em4Muz5CvW9EDp8MM5j4VDkXHuUQWFAlhKj8LqTKJq1mtTAvPwnr3PTSg0Xffz93R+WlNsEkpUAgP7bYSk/9D+cxkURQZFkUFRZFAUGRRFBkWRQVFkUBQZlEohfALUHnkZbB65bwAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Auto*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_25" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3688d2f7-3e5b-4c89-b86f-ad9835164ecb" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+    </Sequence>
+  </Sequence>
+</Activity>

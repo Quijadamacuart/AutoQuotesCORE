@@ -1,0 +1,360 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AQ_CPQ_Update_Spreadsheet_button_in_the_project_spreadsheet" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="608,3226.4" sap2010:WorkflowViewState.IdRef="AQ_CPQ_Update_Spreadsheet_button_in_the_project_spreadsheet_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AQ_CPQ_Update_Spreadsheet_button_in_the_project_spreadsheet" sap:VirtualizedContainerService.HintSize="500,3161.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Kill Process workflow" sap:VirtualizedContainerService.HintSize="458.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CommonActivities\Kill Process.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login Into AQ workflow" sap:VirtualizedContainerService.HintSize="458.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CommonActivities\Login Into AQ.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Sequence DisplayName="Update Spreadsheet " sap:VirtualizedContainerService.HintSize="458.4,2454.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Open an existing project" sap:VirtualizedContainerService.HintSize="416.8,2361.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'text  Demo Project'" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:Click.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:Click.CursorPosition>
+          <ui:Click.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92debbd7-f183-4d95-b549-e1f5670851d5" InformativeScreenshot="edb6ee6004629462ff5d16b5d68859cf" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='*' /&gt;&lt;ctrl idx='*' name='Shared.ClientLogic.Projects.ProjectsBrowserGridDatasourceRow' role='list item' /&gt;&lt;ctrl name='Demo Project' role='text' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Click.Target>
+        </ui:Click>
+        <Sequence DisplayName="Change Category" sap:VirtualizedContainerService.HintSize="375.2,373.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'text STORAGE/DRYING'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition OffsetY="20" Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8dd088da-8711-4bd8-ac02-0f06be79540e" InformativeScreenshot="3e52bf7e7ea081085e1be41b4abde329" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='*' /&gt;&lt;ctrl name='Category' role='column header' /&gt;&lt;ctrl name='Category' role='text' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="TEST" KeyModifiers="None">
+            <ui:SendHotkey.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="238736cf-fd47-4cb8-89c1-a1759781c629">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SendHotkey.Target>
+          </ui:SendHotkey>
+        </Sequence>
+        <Sequence DisplayName="Change list price" sap:VirtualizedContainerService.HintSize="375.2,373.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'list  PART_ColumnHeader...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target Element="{x:Null}" Id="9aa49184-a6a3-491e-95a5-96bfb66803f6" InformativeScreenshot="feda84c4333328b1b49133dd0a144a8f" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Demo Project' /&gt;&lt;ctrl automationid='dataGrid' /&gt;">
+                <ui:Target.ClippingRegion>
+                  <ui:Region Rectangle="922, 23, 76, 17" />
+                </ui:Target.ClippingRegion>
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="123465" KeyModifiers="None">
+            <ui:SendHotkey.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="238736cf-fd47-4cb8-89c1-a1759781c629">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SendHotkey.Target>
+          </ui:SendHotkey>
+        </Sequence>
+        <Sequence DisplayName="Change discount" sap:VirtualizedContainerService.HintSize="375.2,373.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click 'text  $6,246.00'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target Element="{x:Null}" Id="4ac81a82-8022-4004-a5f7-e541cdb56e9c" InformativeScreenshot="93fe4a1ec0c86b72e17f5bba0916e0a5" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Demo Project' /&gt;&lt;ctrl automationid='dataGrid' /&gt;">
+                <ui:Target.ClippingRegion>
+                  <ui:Region Rectangle="1004, 23, 68, 17" />
+                </ui:Target.ClippingRegion>
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="20" KeyModifiers="None">
+            <ui:SendHotkey.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="238736cf-fd47-4cb8-89c1-a1759781c629">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SendHotkey.Target>
+          </ui:SendHotkey>
+        </Sequence>
+        <Sequence DisplayName=" update all prices" sap:VirtualizedContainerService.HintSize="375.2,396" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'aq8.exe  Demo Project'" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAArCAYAAAD41p9mAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAASdAAAEnQB3mYfeAAAAy5JREFUaEPtmcGx4jAMhrewdMAMDXBJJ0wONEAD6YJLGqEbryXZsSTbgeVNBLzVP+NDbEuyPynOYP4El4kctJEctJEctJEctJG+EPQSpmEI05Iev0Q7gr6HeRzCON/Tcxb1vw7qX0DD3DFUS3iDHLSR3g/6PodxnMN9mcIQAWKD5zQMWqbUH9s4zwo0+Vtt8wD3h22K2PNQu39PfQZo2HDpkHYIrIZUeHLoutrrir7Po0gk+isGu+lDQMuq4jAAhPSxdXTomBq0ig1qxN9DHwkaqxhBt3y0qjYfA9T6oOu51L4aNPCKm6hKT4H6UUXrROhnDVol2VC7gsbK5FCj9BlJoHlCCGSGhfNZIjB5q89W0jRoGR/teXwj7QsapL/+epOpomcEmuZwMlEZLrRpUVUp/E9hUm8AJYrGiknxh80A/P6gH6l1Rv9COWgjOWgjvR/0fyIHbSQHbSQHbSQHbSQHbSQHbaQvAV3fWbRUX0B9jiRocW/wGX8Bkd4PGu9MHi1gQwV0uvkqvuLm3nDL1davA92rYtho/JmckkEVz382p/H8RuQEifkaAt3C5bGtG7vqf0LlN/cT6IX51fuhhGU7HbPc9HFbtc7YXkkmOzqyw9a9Q1ogq3AEsS60Hs99Ek7ZONiXfaq5mLCyjgydxvuX9zRPxihrIrsCaTsmQmf76VU0TwBvWtXHMG9KVgMsSlWHWFhnXIAn3+1qkBDqeRxKKojGpis7vkZMtCwiDq8ds+ypB/p2u4XT6ZSYDeFwOGCfVgU6i16jHKgBUiy8Hif7nLTSymYIXj2mKw/EQYMSbLBTb5mw42tE6DIeNnTK/In2GDToer2G4/GI7Xw+p16pLmi5uQboFyq6SMOUz9sVzZUApYFN0I2K5qpjSm2BBl0uF2w9raDBkQhUgYwbUuddCdwAjRtrwQEpcGlujk9vQ4ECEKDCWr44oE3QKWYPpo6phePdwnmsxscwNw4ugZzZ6yeCNkCDEsDik8ESr3L9X1+GSza0NrIlYKvts0cHStnGxucTbD7etu0la0sbRwdXB6TraTloIzloIz0J2vVTOWgjOWgjOWgjOWgThfAX0bzhDH7kwusAAAAASUVORK5CYII=" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4299e835-3541-4321-9608-b5bdc4dc9e1e" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Demo Project' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="1000" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8149b12-6201-4849-9e38-babb9e7948d7" InformativeScreenshot="0420def0f436941f01c8832a2a4b0b2e" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;&lt;ctrl automationid='BarItemLink0bUpdateSSList' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:Click.Target>
+          </ui:Click>
+        </Sequence>
+        <Sequence DisplayName=" update all prices" sap:VirtualizedContainerService.HintSize="375.2,444.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'aq8.exe  Demo Project'" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAArCAYAAAD41p9mAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAASdAAAEnQB3mYfeAAAAy5JREFUaEPtmcGx4jAMhrewdMAMDXBJJ0wONEAD6YJLGqEbryXZsSTbgeVNBLzVP+NDbEuyPynOYP4El4kctJEctJEctJEctJG+EPQSpmEI05Iev0Q7gr6HeRzCON/Tcxb1vw7qX0DD3DFUS3iDHLSR3g/6PodxnMN9mcIQAWKD5zQMWqbUH9s4zwo0+Vtt8wD3h22K2PNQu39PfQZo2HDpkHYIrIZUeHLoutrrir7Po0gk+isGu+lDQMuq4jAAhPSxdXTomBq0ig1qxN9DHwkaqxhBt3y0qjYfA9T6oOu51L4aNPCKm6hKT4H6UUXrROhnDVol2VC7gsbK5FCj9BlJoHlCCGSGhfNZIjB5q89W0jRoGR/teXwj7QsapL/+epOpomcEmuZwMlEZLrRpUVUp/E9hUm8AJYrGiknxh80A/P6gH6l1Rv9COWgjOWgjvR/0fyIHbSQHbSQHbSQHbSQHbSQHbaQvAV3fWbRUX0B9jiRocW/wGX8Bkd4PGu9MHi1gQwV0uvkqvuLm3nDL1davA92rYtho/JmckkEVz382p/H8RuQEifkaAt3C5bGtG7vqf0LlN/cT6IX51fuhhGU7HbPc9HFbtc7YXkkmOzqyw9a9Q1ogq3AEsS60Hs99Ek7ZONiXfaq5mLCyjgydxvuX9zRPxihrIrsCaTsmQmf76VU0TwBvWtXHMG9KVgMsSlWHWFhnXIAn3+1qkBDqeRxKKojGpis7vkZMtCwiDq8ds+ypB/p2u4XT6ZSYDeFwOGCfVgU6i16jHKgBUiy8Hif7nLTSymYIXj2mKw/EQYMSbLBTb5mw42tE6DIeNnTK/In2GDToer2G4/GI7Xw+p16pLmi5uQboFyq6SMOUz9sVzZUApYFN0I2K5qpjSm2BBl0uF2w9raDBkQhUgYwbUuddCdwAjRtrwQEpcGlujk9vQ4ECEKDCWr44oE3QKWYPpo6phePdwnmsxscwNw4ugZzZ6yeCNkCDEsDik8ESr3L9X1+GSza0NrIlYKvts0cHStnGxucTbD7etu0la0sbRwdXB6TraTloIzloIz0J2vVTOWgjOWgjOWgjOWgThfAX0bzhDH7kwusAAAAASUVORK5CYII=" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4299e835-3541-4321-9608-b5bdc4dc9e1e" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Demo Project' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'aq8.exe'" sap:VirtualizedContainerService.HintSize="333.6,156" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAXCAYAAACSyXRTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANBSURBVGhD7Za9jRRBEIUJbPPAQCIFXCw8EsCEEHCwiAAXhyBI4cxF30pPenqq6e25WXZnVmV8uumuv1fVdad78/vvy7lpjkYvbnNIenGbQ9KL2xySXtzmkPTiNofkoYt7Op3OX7//LG174e2793fX+PnLtwuVrQLfDx8/Xb5//PpzmWv67AnX+1qmFpfHqwa59VHXLC6+PEplG4FudFa2mfqPWNylXrmHvJ9dXPpw2yOXfGvdp19cPU7G5iMuce/FpVb1i6b7Ss8RF3frXG+2uAxBZ4YBnN2f4cpGPn66ePxl10N4PlHl8/uk0k+s7rKGL7n3iH/2hL/3MNLktszjPlDdUx/S7nezi0uMtKQevqv76o2pq5rpn7lcd9XHGm66uCnO43xogB9nxXPWN7hNZ18o8vqQiF8aRNYG5dNj6D7zeo9pA9c50oRPxlbgo5k5rreaherILpuTc6h8c46uR/5Zy3PwLX/XlczOY4mbL67biZE4Gsgc+Cs+yZr4UsPtHlvVd7zWaGjYPI/X8X6E5x1pUl7vocLziazLt8+G71wm2Rxp0LnyTY3EqHblnz2jQ1rQtaRlpHOG/7q43nSVA39vmrPj/px9oOkrZE98oPz03Bpwlcd7xE/9CHxlzxxCvvjpzvt2KlvOLnVwVm+jhVB9ndNX50S1qtw+H/A5g8/W32+kc4apxU0xgsISXQnxARPvwwePz8fJczaeA7uGHk06lUv36aez1/F+BL6yz2pSDe9HeD6Q3grFo0vvI3/FO6qrc+XreZPKP3te2hU0Xqu9hqnFVcMuMB9RQlw0Zy1fCsfPc/q3cik27UB8LtE18AfXmH1Il87YVJef2PSw2cOsptGjEe99L+XkTn3gr+9RbunXWb7qBzxvUuXGP9+lisfH+8jzWqYWF9S0yKJqSgsK2QBn2SRcTWd+fP0BPW+VD64NQjlUUxCnHMrpNvf3muQb2UGaXD+kBkE86Lzkyx02vsmtmDWLC9Lrs/N5wCh31b/8lVv4L4hrfg3Ti3uN0cCaeVgCX6JnhR5Z3so2Qy/uDsm/Ts+GdmVLj724O4S/RFv+Gu2drf8mwM0Wt2nuSS9uc0h6cZtD0ovbHJCX8z8Cm/T8r4Bn0QAAAABJRU5ErkJggg==" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d7c91699-d11e-4c48-bb80-22083f08ea18" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' idx='*' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+          </ui:ClickImage>
+        </Sequence>
+      </Sequence>
+    </Sequence>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Close Project Window Without Save workflow" sap:VirtualizedContainerService.HintSize="458.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="CommonActivities\Close Project Window Without Save.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Logout From AQ workflow" sap:VirtualizedContainerService.HintSize="458.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="CommonActivities\Logout From AQ.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

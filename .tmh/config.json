@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/revalwxqisoz/DefaultTenant/testmanager_/",
+  "defaultProject": {
+    "id": "65c5c964-8705-0000-2ea3-0b43a12a9d9f",
+    "name": "AutoQuotes",
+    "key": "AUTOQUOTES"
+  }
+}

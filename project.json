@@ -1,0 +1,319 @@
+{
+  "name": "AutoQuotesCore",
+  "description": "Test Proccess to AutoQuotes Core",
+  "main": "AQ CPQ Login successful sign in.xaml",
+  "dependencies": {
+    "ReporterForUiPath.Activities": "[2.0.0]",
+    "ScrollActivity": "[1.0.2]",
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.2]",
+    "UiPath.System.Activities": "[22.4.4]",
+    "UiPath.UIAutomation.Activities": "[22.4.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.3.0",
+  "projectVersion": "1.0.125436232",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c5ff49b2-f994-49b5-9a95-73330d6bd664",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Critical Path 3 Create a CAD project and Open 3D drawing.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9718b799-2b53-4e87-a05d-efc547968a43",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Login Password reset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8bea124e-0cbd-4632-957e-64857c32571e",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Archive a Project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "072051c8-6666-4edf-a55e-35af18be2d06",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Changing Project Statuses.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "705e93f1-b89f-482b-acbd-919134e89ca3",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Convert Project to Spanish.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c63bf36a-12b6-41db-8d11-bd2acc3131bf",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Create Duplicate of a project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d13a9075-72f8-40bd-9f39-0faef5de626b",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Create new project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "af9dddae-986d-4c3b-b95c-560290a287c5",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Delete a Project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8296c249-a3ea-41f6-ac6e-822ad14e02aa",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Critical Path 1 Print a Web Quote with AQ Pay and make a payment.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "11f0993f-0b1b-47c7-8aa1-8a4fb85fa02c",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Critical Path 2_ Catalog filter tree selection in new Elastic catalog(Autosaved).xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6de3e5a4-77ff-4d19-96a3-7c3b827e46c0",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Login successful sign in process.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "71e7e25f-9245-4ec5-8e42-eb55dfd7ad1a",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Contacts Add new contacts to a company.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "17d3ef10-ee66-44ce-81b0-444e70f3ed1c",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Critical Path 4 MFR SETTING populate discount categories based on Toggle selection.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "16e617f6-31ea-43c4-8fdf-f6df737daeec",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Critical Path 5 Generate and save PO numbers for a project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d96b8550-3f35-4956-bc7d-3c95f998f3a0",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Contacts Edit a Contact and create a new project from Contacts.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0e89dd23-1084-4049-8177-31ad1f22d3e0",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Contacts Delete a Contact.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4a7ddb00-49f2-4141-acf2-a494b92f76f4",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Set password for a project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1fd17eae-7f91-4651-8c34-bc13413d4aeb",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects View Project history.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "969b4151-4544-4ae7-965a-967a42c16853",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects making project Read only.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "39bea54f-dce7-488f-8cf3-8bc37a07f112",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Adding a custom item to project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cc3a69a8-9aba-40e5-a9de-00d21d585803",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Adding a custom accessory to project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3317219c-1805-42b0-b8dd-daf217fc9a26",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Configure an item from the spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b23e1b7b-193b-4726-8732-b83df92af1a0",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Copy, Cut and Paste function in the spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "686c402a-b654-4001-8d92-354f25ca261f",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Insert below above or as last item in project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "312817bd-2542-4d97-a940-4332c00deaa7",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Renumber items_ Selected or All items in project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "65a5db09-0b94-4995-9273-135edefee6c7",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Choose Column button functionality in project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6518ce36-c19f-42f0-bc95-85e2fe115d55",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Hide or Show Detail panel in project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ea5fe451-6d55-43d8-a8ef-20fec70c208d",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Sharing Project with other users.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e9989b8e-56ed-4459-938d-99e1a7c708e6",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Update Spreadsheet button in the project spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "daaa3767-0ec0-4396-bec5-857b11b3029d",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Round Sell Prices functionality in Project Spreadsheet.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c6530182-e139-4533-bdfa-ecaf5a861b24",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Q3 Sprint 5 AQ8FES 1500 MAP Price of base item passed as MAP price for accessories.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c740c2f6-b48f-4aa2-8e47-b6cca9bdb636",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Q3 Sprint 5 AQ8FES 1515 Adding Your Vendor ID from Mfr Settings.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f4e1ae78-f221-4222-b5e0-64f00ef9b731",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Q3 Sprint 5 AQ8FES1518 Adding in Exclusion List to AQ.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a3e940ab-885b-4078-b616-b86fe71d3b6c",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Q3 Sprint 7 AQ8FES 1556 Product Catalog Issue.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7c844fb3-67bd-46cb-8e49-c98f86344ecb",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects View Email History.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "575d4a4b-8808-4cbc-a984-c5071a647235",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ_Catalog_Searching the term PR in catalog gives error message and no search results.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "97c200ad-6bdd-4139-b290-3378a3c70359",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ_Reports_Printing huge projects with lots of cutsheets gives error message.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a915bcb5-76fb-4283-93b0-1fd61eead6b4",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ_Catalog_Filter tree_Mfrs with special character displayed incorrectly.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5479e0c5-946d-4cef-bc77-0413fdd5deb9",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Save Project Attachments.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5bf9fd4a-c2a0-46d9-8a97-85dbca40f5fa",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Projects Custom Item Images and Spechseets not saving.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2fff57b3-ad8f-422d-ba9c-c8d3f35f19fe",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Project Spreadsheet_Validation of Obsolete Models when imported.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a169328b-3400-42dd-997b-07913764d9ec",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Catalog Regresion 1_2_3.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1da42364-ba08-44aa-8f3f-7178181d64dc",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Catalog Regression_ Sort_Default_Hogh to low_low to high.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "AQ CPQ Login successful sign in.xaml",
+      "uniqueId": "43f4ab73-0904-4894-bb73-0c974a0a5a78",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
