@@ -299,6 +299,18 @@
         "testCaseId": "1da42364-ba08-44aa-8f3f-7178181d64dc",
         "testCaseType": "TestCase",
         "fileName": "AQ CPQ Catalog Regression_ Sort_Default_Hogh to low_low to high.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e9c48e5c-2bfe-4278-a667-0ef5b851c271",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Catalog Regression_Change Catalog views_Classic_Card and List view.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0b48a593-5f0d-4d85-9422-2ecdcb20aaa1",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Catalog Regression_Add Product button.xaml"
       }
     ],
     "modernBehavior": false
