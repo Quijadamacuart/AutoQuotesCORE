@@ -86,7 +86,7 @@
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'aq8.exe  Authenticating...'" FileName="C:\Users\usuario\AppData\Roaming\AutoQuotes\AQ\bin\aq8.exe" sap:VirtualizedContainerService.HintSize="771.2,1645.6" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="b6d42ed3fad6287f401c41b447602581" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Authenticating...' /&gt;">
+      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'aq8.exe  Authenticating...'" FileName="C:\Users\usuario\AppData\Roaming\AutoQuotes\AQ -QA Env\bin\aq8.exe" sap:VirtualizedContainerService.HintSize="771.2,1645.6" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="b6d42ed3fad6287f401c41b447602581" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='Authenticating...' /&gt;">
         <ui:OpenApplication.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
