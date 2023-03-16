@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AQ_CPQ_Critical_Path_3_Create_a_CAD_project_and_Open_3D_drawing" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="464.8,4643.2" sap2010:WorkflowViewState.IdRef="AQ_CPQ_Critical_Path_2__Catalog_filter_tree_selection_in_new_Elastic_catalog_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AQ_CPQ_Critical_Path_3_Create_a_CAD_project_and_Open_3D_drawing" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="724,4796.8" sap2010:WorkflowViewState.IdRef="AQ_CPQ_Critical_Path_2__Catalog_filter_tree_selection_in_new_Elastic_catalog_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
       <x:String>System.Activities</x:String>
@@ -63,7 +63,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AQ_CPQ_Critical_Path_2__Catalog_filter_tree_selection_in_new_Elastic_catalog" sap:VirtualizedContainerService.HintSize="475.2,4578.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AQ_CPQ_Critical_Path_3__Catalog_filter_tree_selection_in_new_Elastic_catalog" sap:VirtualizedContainerService.HintSize="475.2,4732" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="flag" />
       <Variable x:TypeArguments="x:Boolean" Name="elem" />
@@ -558,13 +558,13 @@
       <Delay DisplayName=" Delay 10 seconds" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
     </Sequence>
     <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="AQDX2022.exe" />
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'aq8.exe CAD'" sap:VirtualizedContainerService.HintSize="433.6,520.8" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="2e211c3794fa00db6988fc07291866f9" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='CAD Project Test' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'aq8.exe CAD'" sap:VirtualizedContainerService.HintSize="433.6,674.4" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="2e211c3794fa00db6988fc07291866f9" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='CAD Project Test' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="375.2,373.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+          <Sequence sap:VirtualizedContainerService.HintSize="375.2,527.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -604,6 +604,11 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Logout From AQ workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="CommonActivities\Logout From AQ.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
           </Sequence>
         </ActivityAction>
       </ui:WindowScope.Body>

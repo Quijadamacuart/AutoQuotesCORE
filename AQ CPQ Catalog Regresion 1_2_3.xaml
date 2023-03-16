@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AQ_CPQ_Catalog_Regresion_1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="788,6971.2" sap2010:WorkflowViewState.IdRef="AQ_CPQ_Catalog_Regresion_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AQ_CPQ_Catalog_Regresion_1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="724,6971.2" sap2010:WorkflowViewState.IdRef="AQ_CPQ_Catalog_Regresion_1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
       <x:String>System.Activities</x:String>
@@ -68,7 +68,7 @@
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke OpenAQ workflow" sap:VirtualizedContainerService.HintSize="493.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CommonActivities\OpenAQ.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Login Into AQ workflow" sap:VirtualizedContainerService.HintSize="493.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="CommonActivities\Login Into AQ.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
@@ -126,7 +126,7 @@
             <InArgument x:TypeArguments="x:Int32">1</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="410.4,467.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[i&lt;=5]" DisplayName="While" sap:VirtualizedContainerService.HintSize="410.4,467.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
           <ui:InterruptibleWhile.Body>
             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,300" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
@@ -169,9 +169,6 @@
               </Assign>
             </Sequence>
           </ui:InterruptibleWhile.Body>
-          <ui:InterruptibleWhile.Condition>
-            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;=5" />
-          </ui:InterruptibleWhile.Condition>
         </ui:InterruptibleWhile>
       </Sequence>
       <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
@@ -366,7 +363,7 @@
             <InArgument x:TypeArguments="x:Int32">1</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="410.4,467.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+        <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[i&lt;=10]" DisplayName="While" sap:VirtualizedContainerService.HintSize="410.4,467.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
           <ui:InterruptibleWhile.Body>
             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,300" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
@@ -409,9 +406,6 @@
               </Assign>
             </Sequence>
           </ui:InterruptibleWhile.Body>
-          <ui:InterruptibleWhile.Condition>
-            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;=10" />
-          </ui:InterruptibleWhile.Condition>
         </ui:InterruptibleWhile>
       </Sequence>
       <ui:ClickImage ContinueOnError="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="5000" DisplayName="Click Image 'aq8.exe AutoQuotes'" sap:VirtualizedContainerService.HintSize="452,156" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT">

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Close_Project_Window_Without_Save" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="699.2,610.4" sap2010:WorkflowViewState.IdRef="Close_Project_Window_Without_Save_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Close_Project_Window_Without_Save" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="808.8,564.8" sap2010:WorkflowViewState.IdRef="Close_Project_Window_Without_Save_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -76,10 +76,7 @@
           </ui:CursorPosition>
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target Element="{x:Null}" Id="95e56730-113b-4db2-869e-f6f694f205e2" InformativeScreenshot="a133eb124005cf64d1333da2d0d435ee" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='CAD Project Test' /&gt;">
-            <ui:Target.ClippingRegion>
-              <ui:Region Rectangle="0, 0, 48, 21" />
-            </ui:Target.ClippingRegion>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95e56730-113b-4db2-869e-f6f694f205e2" InformativeScreenshot="206d17d0d963c153031cb1cd9d35f663" Selector="&lt;wnd app='aq8.exe' cls='HwndWrapper*' title='*' /&gt;&lt;ctrl name='BarManagerbarManager' role='grouping' /&gt;&lt;ctrl automationid='_ribbonControl' /&gt;&lt;ctrl name='Lower Ribbon' role='pane' /&gt;&lt;ctrl name='Home' role='grouping' /&gt;&lt;ctrl automationid='bExit' /&gt;">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>

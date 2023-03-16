@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.3.0",
-  "projectVersion": "1.0.129076860",
+  "projectVersion": "1.0.130878902",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -311,6 +311,24 @@
         "testCaseId": "0b48a593-5f0d-4d85-9422-2ecdcb20aaa1",
         "testCaseType": "TestCase",
         "fileName": "AQ CPQ Catalog Regression_Add Product button.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a146a845-1b24-4387-84eb-53487c6eed8d",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Reports_Update Leasing Badge for LEAF.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "265763a3-5b1b-47eb-9eec-fbdde2f26f78",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ MFR Settings Adding new line in the grid for Catalog notes and Mfr summary notes.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "371c4c48-addc-4abe-8774-98a3e2b6389a",
+        "testCaseType": "TestCase",
+        "fileName": "AQ CPQ Mfr Settings_Edit sister company Mfr Settings from parent.xaml"
       }
     ],
     "modernBehavior": false
